@@ -1,0 +1,21 @@
+# --- C# / .NET / Visual Studio ---
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# --- React / Vite / TypeScript ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+.DS_Store
+
+# --- Database ---
+*.db
+*.db-journal
