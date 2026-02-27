@@ -1,4 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using FinanceTracker.Server.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+// This tells the app to use SQLite and creates a file named "finance.db"
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=finance.db"));
 
 // Add services to the container.
 
